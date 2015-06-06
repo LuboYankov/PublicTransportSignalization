@@ -1,0 +1,496 @@
+{"public_transport": {
+  "Service": [   
+    {
+      "serviceType": "Tram",
+      "lineNumber": {
+        "num": 1, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 3,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 4,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 5,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 6,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 7,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 8,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 10,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 11,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 12,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 18,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 19,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 20,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 22,
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 23,
+        "operator": "StElTr"
+      }
+    }, 
+    { "serviceType": "Subway",
+      "lineNumber": {
+        "num": "М1", 
+        "operator": "Metropoliten"
+      },
+      "lineNumber": {
+        "num": "М2",
+        "operator": "Metropoliten"
+      }
+    },
+    { "serviceType": "Trolley",
+      "lineNumber": {
+        "num": 1, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 2, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 4, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 5, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 6, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 7, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 8, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 9, 
+        "operator": "StElTr"
+      },
+      "lineNumber": {
+        "num": 11, 
+        "operator": "StElTr"
+      }
+    },
+    { "serviceType": "Bus",
+      "lineNumber": {
+        "num": 1, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 3, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 4, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 5, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 6, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 7, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 8, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 9, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 10, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 11, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 12, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 14, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 18, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 20, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 21,
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 22, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": "21/22", 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 23, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 24, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 25, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 26, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 27, 
+        "operator": "UnionIvkoni"
+      },
+      "lineNumber": {
+        "num": 28, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 29, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 30, 
+        "operator": "MTK"
+      },
+      "lineNumber": {
+        "num": 31, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 42, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 44, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": "44Б", 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 45, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 47, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 48, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 49, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 54, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 56, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 59, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 60, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 63, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 64, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 65, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 66, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 67, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 69, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 70, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 72, 
+        "operator": "Reya"
+      },
+      "lineNumber": {
+        "num": 73, 
+        "operator": "Reya"
+      },
+      "lineNumber": {
+        "num": 74, 
+        "operator": "UnionIvkoni"
+      },
+      "lineNumber": {
+        "num": 75, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 76, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 77, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 78, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 79, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 81, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 82, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 83, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 84, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 85, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 86, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 87, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 88, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 90, 
+        "operator": "MTK"
+      },
+      "lineNumber": {
+        "num": 93, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 94, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 98, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 100, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 101, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 102, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 103, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 107, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 108, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 111, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 113, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 117, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 118, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 119, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 120, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 122, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 123, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 150, 
+        "operator": "UnionIvkoni"
+      },
+      "lineNumber": {
+        "num": 204, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 213, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 260, 
+        "operator": "EridanTrans"
+      },
+      "lineNumber": {
+        "num": 280, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 285, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 294, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 305, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 306, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 309, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 310, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 314, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 384, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 404, 
+        "operator": "KARATS"
+      },
+      "lineNumber": {
+        "num": 413, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 505, 
+        "operator": "StAvtT"
+      },
+      "lineNumber": {
+        "num": 604, 
+        "operator": "StAvtT"
+      }
+    }
+    ]}}

@@ -1,0 +1,10 @@
+EridanTrans eridantrans@abv.bg
+UnionIvkoni office@union-ivkoni.com 
+StAvt office@sofiabus.bg
+StElTr eltrans@mail.bg
+KARATS operations@eurolines.bg
+Metropoliten metro@metropolitan.bg
+МТК mtk@online.bg
+
+url https://www.sofiatraffic.bg/bg/common/356/podobrena-dostapnost-na-stolichniia-gradskiia
+
