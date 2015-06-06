@@ -1,3 +1,6 @@
+require_relative './buslines/parse_mails.rb'
+require_relative './buslines/parse_lines.rb'
+
 class AlertController < ApplicationController
 	def index
 		@alert = Alert.new
@@ -12,7 +15,9 @@ class AlertController < ApplicationController
 		  time = params[:alert][:time].to_s
 		  bus_line = params[:alert][:bus_line].to_s
 		  comment = params[:alert][:comment].to_s
-		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :comment => comment 
+		  company = get_bus_company(bus_line)
+		  company_mail = get_mail(company)
+		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :comment => comment, :company_mail => company_mail
 		else
 		  flash.now[:error] = 'Cannot send message.'
 		  render :index
