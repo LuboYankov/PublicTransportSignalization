@@ -1,10 +1,11 @@
-EridanTrans eridantrans@abv.bg
-UnionIvkoni office@union-ivkoni.com 
-StAvt office@sofiabus.bg
-StElTr eltrans@mail.bg
-KARATS operations@eurolines.bg
-Metropoliten metro@metropolitan.bg
-МТК mtk@online.bg
+EridanTrans eridantrans@abv.bg +359 02 936 6693
+UnionIvkoni office@union-ivkoni.com +359 0700 18282
+StAvt office@sofiabus.bg +359 02 955 4094
+StElTr eltrans@mail.bg +359 02 931 8085
+Metropoliten metro@metropolitan.bg +359 02 921 2001
+KARATS operations@eurolines.bg +359 02 812 0826
+МТК mtk@online.bg +359 02 968 1005
+Reya Tel: +359 02 4166810
 
 url https://www.sofiatraffic.bg/bg/common/356/podobrena-dostapnost-na-stolichniia-gradskiia
 
