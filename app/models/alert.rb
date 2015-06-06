@@ -4,6 +4,7 @@ class Alert < MailForm::Base
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :time
   attribute :bus_line
+  attribute :image
   attribute :comment
 	
   # Declare the e-mail headers. It accepts anything the mail method

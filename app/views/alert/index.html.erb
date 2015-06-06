@@ -2,7 +2,7 @@
 <% require_relative '../../controllers/buslines/parse_lines.rb' %>
 
 <h1>Alert</h1>
-<%= form_for :alert do |f| %>
+<%= form_for :alert , :html => { :multipart => true } do |f| %>
 	 <%= f.label 'First Name: ' %><br />
   	 <%= f.text_field :first_name, :required => true %> <br /> <br />
   	 <%= f.label 'Last Name: ' %><br />
@@ -14,6 +14,8 @@
   	 <%= f.label 'Bus Line: ' %> <br />
   	 <% @bus_lines = get_bus_lines %>
   	 <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), :required => true %> <br /> <br />
+  	 <%= f.label 'Image: ' %><br />
+  	 <%= f.file_field :image %> <br /> <br />
   	 <%= f.label 'Comment: ' %><br />
 	   <%= f.text_area :comment, :cols => 60, :rows => 10, :required => true %> <br /> <br />
      <%= f.submit 'Submit' %>
