@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   root 'home#welcome'
   resources :alert
 
+match '/alert',     to: 'alert#index',             via: 'get'
+resources "alert", only: [:index, :create]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
