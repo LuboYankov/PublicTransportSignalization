@@ -1,9 +1,0 @@
-<% @body_name = "alert" %>
-
-<h4> Your complaint was sent successfully! </h4>
-<p> Name: <%= params[:name] %> </p>
-<p> E-mail: <%= params[:email] %> </p>
-<p> Time: <%= params[:time] %> </p>
-<p> Bus Line: <%= params[:bus_line] %> </p>
-<p> Image: <%= image_tag("/home/ivo/Desktop/PublicTransportSignalization/public/images/spasibo.jpg") %> </p>
-<p> Comment: <%= params[:comment] %> </p>
