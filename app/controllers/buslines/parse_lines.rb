@@ -1,7 +1,7 @@
 require 'json'
 
 def read_data 
-	data = File.read("./lines.json")
+	data = File.read(Rails.root.to_s + "/app/controllers/buslines/lines.json")
 end
 
 def get_bus_lines
@@ -38,10 +38,4 @@ def get_trolley_lines
 		trolley_lines << e["num"]
 	end
 	return trolley_lines
-end
-
-
-asd = get_trolley_lines
-asd.each do |l|
-	puts l
 end

@@ -1,3 +1,5 @@
+<% require_relative '../../controllers/buslines/parse_lines.rb' %>
+
 <h1>Alert</h1>
 <%= form_for :alert do |f| %>
 	 <%= f.label 'First Name: ' %><br />
@@ -8,6 +10,7 @@
   	 <%= f.email_field :email, :required => true %> <br /> <br />
   	 <%= f.label 'Time: ' %> <br />
   	 <%= f.time_field :time, :required => true %> <br /> <br />
+  	 <% @bus_lines = get_bus_lines %>
   	 <%= f.label 'Line: ' %><br />
   	 <%= f.number_field :line, :min => 1, :max => 604, :required => true %> <br /> <br />
   	 <%= f.label 'Comment: ' %><br />
