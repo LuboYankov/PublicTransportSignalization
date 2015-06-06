@@ -1,0 +1,67 @@
+{"mails": {
+  "Companies": [   
+      {
+        "name": "EridanTrans",
+        "fullName": "Еридантранс",
+        "contact": {
+          "mail": "eridantrans@abv.bg", 
+          "phone": "+359 02 936 6693"
+        }
+      },
+      {
+        "name": "UnionIvkoni",
+        "fullName": "Union Ivkoni",
+        "contact": {
+          "mail": "office@union-ivkoni.com", 
+          "phone": "+359 0700 18282"
+        }
+      },
+      {
+        "name": "StAvt",
+        "fullName": "Столичен Автотранспорт",
+        "contact": {
+          "mail": "office@sofiabus.bg",
+          "phone": "+359 02 955 4094"
+        }
+      },
+      {
+        "name": "StElTr",
+        "fullName": "Столичен Електротранспорт",
+        "contact": {
+          "mail": "eltrans@mail.bg",
+          "phone": "+359 02 931 8085"
+        }
+      },
+      {
+        "name": "Metropoliten",
+        "fullName": "Метрополитен",
+        "contact": {
+          "mail": "metro@metropolitan.bg",
+          "phone": "+359 02 921 2001"
+        }
+      },
+      {
+        "name": "KARATS",
+        "fullName": "КАРАТ-С",
+        "contact": { 
+          "mail": "operations@eurolines.bg",
+          "phone": "+359 02 812 0826"
+        }
+      },
+      {
+        "name": "МТК",
+        "fullName": "МТК",
+        "contact": { 
+          "mail": "mtk@online.bg",
+          "phone": "+359 02 968 1005"
+        }
+      }, 
+      {
+        "name": "Reya",
+        "fullName": "Тея-Травел",
+        "contact": { 
+          "phone": "+359 02 4166810"
+        }
+      } 
+  ]
+}}
