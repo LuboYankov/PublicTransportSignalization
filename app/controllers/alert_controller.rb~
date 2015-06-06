@@ -15,7 +15,9 @@ class AlertController < ApplicationController
 		  image = params[:alert][:image].original_filename
 			path = File.join("app/assets/images", image)
 			File.open(path, "wb") { |f| f.write(params[:alert][:image].read) }
-			  
+			
+		  	
+		  
 		  comment = params[:alert][:comment].to_s
 		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :image => image, :comment => comment
 		else

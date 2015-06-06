@@ -5,5 +5,5 @@
 <p> E-mail: <%= params[:email] %> </p>
 <p> Time: <%= params[:time] %> </p>
 <p> Bus Line: <%= params[:bus_line] %> </p>
-<p> Image: <%= image_tag(params[:image]) %> </p>
+<p> Image: <%= image_tag("/home/ivo/Desktop/PublicTransportSignalization/public/images/spasibo.jpg") %> </p>
 <p> Comment: <%= params[:comment] %> </p>
