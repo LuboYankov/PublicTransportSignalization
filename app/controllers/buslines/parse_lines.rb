@@ -4,44 +4,27 @@ def read_data
 	data = File.read("./lines.json")
 end
 
-def get_bus_lines
-	bus_lines = []
+def get_lines val, type
+	lines = []
 	hash = JSON.parse read_data
-	hash["public_transport"]["Service"][3]["Bus"].each do |e|
-		bus_lines << e["num"]
+	hash["public_transport"]["Service"][val]["#{type}"].each do |e|
+		lines << e["num"]
 	end
-	return bus_lines
+	return lines
 end
 
 def get_tram_lines
-	tram_lines = []
-	hash = JSON.parse read_data
-	hash["public_transport"]["Service"][0]["Tram"].each do |e|
-		tram_lines << e["num"]
-	end
-	return tram_lines
+	get_lines 0, "Tram"
 end
 
 def get_subway_lines
-	subway_lines = []
-	hash = JSON.parse read_data
-	hash["public_transport"]["Service"][1]["Subway"].each do |e|
-		subway_lines << e["num"]
-	end
-	return subway_lines
+	get_lines 1, "Subway"
 end
 
 def get_trolley_lines
-	trolley_lines = []
-	hash = JSON.parse read_data
-	hash["public_transport"]["Service"][2]["Trolley"].each do |e|
-		trolley_lines << e["num"]
-	end
-	return trolley_lines
+	get_lines 2, "Trolley"
 end
 
-
-asd = get_trolley_lines
-asd.each do |l|
-	puts l
+def get_bus_lines
+	get_lines 3, "Bus"
 end
