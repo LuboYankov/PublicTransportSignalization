@@ -11,8 +11,17 @@
   	 <%= f.label 'Time: ' %> <br />
   	 <%= f.time_field :time, :required => true %> <br /> <br />
   	 <% @bus_lines = get_bus_lines %>
-  	 <%= f.label 'Line: ' %><br />
-  	 <%= f.number_field :line, :min => 1, :max => 604, :required => true %> <br /> <br />
+  	 <% @tram_lines = get_tram_lines %>
+  	 <% @subway_lines = get_subway_lines %>
+  	 <% @trolley_lines = get_trolley_lines %>
+  	 <%= f.label 'Tram Line: ' %><br />
+  	 <%= f.select :tram_line, options_for_select([["Select tram line" , "" ]] + @tram_lines), :required => true %> <br /> <br />
+  	 <%= f.label 'Subway Line: ' %><br />
+  	 <%= f.select :subway_line, options_for_select([["Select subway line" , "" ]] + @subway_lines), :required => true %> <br /> <br />
+  	 <%= f.label 'Tram Line: ' %><br />
+  	 <%= f.select :bus_line, options_for_select([["Select bus line" , "" ]] + @bus_lines), :required => true %> <br /> <br />
+  	 <%= f.label 'Trolley Line: ' %><br />
+  	 <%= f.select :tram_line, options_for_select([["Select trolley line" , "" ]] + @trolley_lines), :required => true %> <br /> <br />
   	 <%= f.label 'Comment: ' %><br />
   	 <%= f.text_area :comment, :cols => 60, :rows => 10, :required => true %> <br /> <br />
   	 <%= f.submit 'Submit' %>
