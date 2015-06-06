@@ -3,9 +3,9 @@
 <h1>Alert</h1>
 <%= form_for :alert do |f| %>
 	 <%= f.label 'First Name: ' %><br />
-  	 <%= f.text_field :first_name, :required => true %> <br /> <br />
+  	 <%= f.text_field :fname, :required => true %> <br /> <br />
   	 <%= f.label 'Last Name: ' %><br />
-  	 <%= f.text_field :last_name, :required => true %> <br /> <br />
+  	 <%= f.text_field :lname, :required => true %> <br /> <br />
   	 <%= f.label 'Email: '%><br />
   	 <%= f.email_field :email, :required => true %> <br /> <br />
   	 <%= f.label 'Time: ' %> <br />
