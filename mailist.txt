@@ -1,4 +1,6 @@
 eridantrans eridantrans@abv.bg
 union ivkoni office@union-ivkoni.com 
 stolichen avtotransport office@sofiabus.bg
+KARAT S operations@eurolines.bg
+url https://www.sofiatraffic.bg/bg/common/356/podobrena-dostapnost-na-stolichniia-gradskiia
 
