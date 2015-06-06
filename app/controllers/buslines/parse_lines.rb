@@ -1,7 +1,7 @@
 require 'json'
 
 def read_data 
-	data = File.read("./lines.json")
+	data = File.read(Rails.root.to_s + "/app/controllers/buslines/lines.json")
 end
 
 def get_lines val, type
