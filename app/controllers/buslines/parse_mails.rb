@@ -6,5 +6,5 @@ end
 
 def get_mail(company)
 	data = JSON.parse(read_mail_data)
-	company_data = data["mails"]["Companies"]["#{company}"]["contact"]["mail"]
+	company_data = data["mails"]["Companies"]["#{company}"]["contact"]["mail"].to_s
 end
