@@ -6,5 +6,7 @@
 <p> Company-mail: <%= params[:company_mail] %> </p>
 <p> Time: <%= params[:time] %> </p>
 <p> Bus Line: <%= params[:bus_line] %> </p>
-<p> Image: <%= image_tag(params[:image], size: "800") %> </p>
+<% if params[:image] != nil %>
+	<p> Image: <%= image_tag(params[:image], size: "800") %> </p>
+<% end %>
 <p> Comment: <%= params[:comment] %> </p>

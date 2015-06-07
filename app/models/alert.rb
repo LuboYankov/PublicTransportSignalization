@@ -2,6 +2,7 @@ class Alert < MailForm::Base
   attribute :first_name,      :validate => true
   attribute :last_name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :company_mail, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :time
   attribute :bus_line
   attribute :image
@@ -12,7 +13,7 @@ class Alert < MailForm::Base
   def headers
     {
       :subject => "Complaints",
-      :to => "publictransportcomplain@gmail.com",
+      :to => %(<#{company_mail}>),
       :from => %("#{first_name} #{last_name}" <#{email}>)
     }
   end
