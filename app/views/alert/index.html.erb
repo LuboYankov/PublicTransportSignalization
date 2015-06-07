@@ -3,21 +3,21 @@
 
 <div class="container">
 <%= form_for :alert , :html => { :multipart => true } do |f| %>
-	 <%= f.label 'First Name: ' %><br />
+	 <%= f.label 'Собствено име: ' %><br />
   	 <%= f.text_field :first_name, :required => true, class: "form-control" %> <br /> <br />
-  	 <%= f.label 'Last Name: ' %><br />
+  	 <%= f.label 'Фамилия: ' %><br />
   	 <%= f.text_field :last_name, :required => true, class: "form-control" %> <br /> <br />
-  	 <%= f.label 'Email: '%><br />
+  	 <%= f.label 'E-mail: '%><br />
   	 <%= f.email_field :email, :required => true, class: "form-control" %> <br /> <br />
-  	 <%= f.label 'Time: ' %> <br />
+  	 <%= f.label 'Време на инцидента: ' %> <br />
   	 <%= f.time_field :time, :required => true, class: "form-control" %> <br /> <br />
-  	 <%= f.label 'Bus Line: ' %> <br />
+  	 <%= f.label 'Автобусна линия: ' %> <br />
   	 <% @bus_lines = get_bus_lines %>
   	 <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), {}, {:class => "form-control", :required => true} %> <br /> <br />
-  	 <%= f.label 'Image: ' %><br />
+  	 <%= f.label 'Снимка към инцидента: ' %><br />
   	 <%= f.file_field :image, class: "btn btn-default btn-lg btn-block" %> <br /> <br />
-  	 <%= f.label 'Comment: ' %><br />
+  	 <%= f.label 'Коментар: ' %><br />
 	   <%= f.text_area :comment, :cols => 60, :rows => 10, :required => true, class: "form-control" %> <br /> <br />
-     <%= f.submit 'Submit', class: "btn btn-default btn-lg btn-block" %>
+     <%= f.submit 'Пусни жалбата', class: "btn btn-default btn-lg btn-block" %>
 <% end %>
 </div>  
