@@ -1,20 +1,31 @@
-<% @body_name = "alert" %>
+<% @body_name = "home" %>
 <% require_relative '../../controllers/buslines/parse_lines.rb' %>
 
-<h1>Alert</h1>
+<div class="container">
 <%= form_for :alert do |f| %>
-	 <%= f.label 'First Name: ' %><br />
-  	 <%= f.text_field :first_name, :required => true %> <br /> <br />
-  	 <%= f.label 'Last Name: ' %><br />
-  	 <%= f.text_field :last_name, :required => true %> <br /> <br />
-  	 <%= f.label 'Email: '%><br />
-  	 <%= f.email_field :email, :required => true %> <br /> <br />
-  	 <%= f.label 'Time: ' %> <br />
-  	 <%= f.time_field :time, :required => true %> <br /> <br />
-  	 <%= f.label 'Bus Line: ' %> <br />
+	 <%= f.label 'Собствено име: ' %>
+  	 <%= f.text_field :first_name, :required => true, class: "form-control", placeholder: "Собствено име" %>
+  	 <%= f.label 'Фамилия: ' %>
+  	 <%= f.text_field :last_name, :required => true, class: "form-control", placeholder: "Фамилия"  %>
+  	 <%= f.label 'E-mail: '%>
+     <%= f.email_field :email, :required => true, class: "form-control", placeholder: "E-mail"  %>
+  	 <%= f.label 'Час на инцидента: ' %>
+  	 <%= f.time_field :time, :required => true, class: "form-control" %>
+  	 <%= f.label 'Линия на автобус: ' %>
   	 <% @bus_lines = get_bus_lines %>
-  	 <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), :required => true %> <br /> <br />
-  	 <%= f.label 'Comment: ' %><br />
-	 <%= f.text_area :comment, :cols => 60, :rows => 10, :required => true %> <br /> <br />
-  	 <%= f.submit 'Submit' %>
+     <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+        Избери автобусна линия...<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <% @bus_lines.each do |line|%>
+          <%- line %>
+        <% end %>
+      </ul>
+    </div>
+  	 <!-- <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), :required => true, class: "form-control" %> -->
+  	 <%= f.label 'Допълнителен коментар към инцидента: ' %><br />
+	 <%= f.text_area :comment, :cols => 66, :rows => 7, :required => true %> <br /> <br />
+  	 <%= f.submit 'Подай жалба', class: "btn btn-default" %>
 <% end %>
+</div>
