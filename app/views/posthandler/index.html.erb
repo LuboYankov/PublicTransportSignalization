@@ -1,12 +1,50 @@
-<% @body_name = "alert" %>
+<% @body_name = "posthandler" %>
 
-<h4> Your complaint was sent successfully! </h4>
-<p> Name: <%= params[:name] %> </p>
-<p> E-mail: <%= params[:email] %> </p>
-<p> Company-mail: <%= params[:company_mail] %> </p>
-<p> Time: <%= params[:time] %> </p>
-<p> Bus Line: <%= params[:bus_line] %> </p>
-<% if params[:image] != nil %>
-	<p> Image: <%= image_tag(params[:image], size: "800") %> </p>
-<% end %>
-<p> Comment: <%= params[:comment] %> </p>
+<div class="container">
+<h2>Жалбата Ви е изпратена успешно.</h2>
+<h4>Вашето съобщение:</h4>
+<table class="table table-bordered">
+	<thead>
+	  <tr>
+	    <th>Поле</th>
+	    <th>Съдържание</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>Име</td>
+	    <td><%= params[:name] %> </td>
+	  </tr>
+	  <tr>
+	    <td>E-mail</td>
+	    <td><%= params[:email] %></td>
+	  </tr>
+	  <tr>
+	    <td>Концесионер, до който е изпратена:</td>
+	    <td><%= params[:company_mail] %></td>
+	  </tr>
+	  <tr>
+	    <td>Час на инцидента:</td>
+	    <td><%= params[:time] %></td>
+	  </tr>
+	  <tr>
+	    <td>Концесионер, до който е изпратена:</td>
+	    <td><%= params[:company_mail] %></td>
+	  </tr>
+	  <tr>
+	    <td>Линия, на която се е случил инцидента:</td>
+	    <td><%= params[:bus_line] %></td>
+	  </tr>
+		<% if params[:image] != nil %>
+			<tr>
+				<td>Снимка на жалбата:</td>
+				<td><%= image_tag(params[:image], size: "500") %></td>
+			</tr>
+		<% end %>
+	  <tr>
+	    <td>Коментар към жалбата:</td>
+	    <td><%= params[:comment] %></td>
+	  </tr>
+	</tbody>
+</table>
+</div>
