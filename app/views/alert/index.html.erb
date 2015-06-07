@@ -13,7 +13,23 @@
   	 <%= f.time_field :time, :required => true, class: "form-control" %> <br /> <br />
   	 <%= f.label 'Автобусна линия: ' %> <br />
   	 <% @bus_lines = get_bus_lines %>
-  	 <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), {}, {:class => "form-control", :required => true} %> <br /> <br />
+     <% @trolley_lines = get_trolley_lines %>
+     <% @tram_lines = get_tram_lines %>
+     <% @subway_lines = get_subway_lines %>
+     
+    <%= f.radio_button :transport, 'bus' %> <strong>Bus</strong>
+    <%= f.radio_button :transport, 'trolley' %> <strong>Trolley</strong>
+    <%= f.radio_button :transport, 'tram' %> <strong>Tram</strong>
+    <%= f.radio_button :transport, 'subway' %> <strong>Subway</strong>
+     <br />
+  	 <%= f.label 'Bus line: ' %> <br />
+     <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), {}, {:class => "form-control"} %> <br /> <br />
+     <%= f.label 'Tram line: ' %> <br />
+     <%= f.select :tram_line, options_for_select([["Select tram line...", ""]] + @tram_lines), {}, {:class => "form-control"} %> <br /> <br />
+     <%= f.label 'Subway line: ' %> <br />
+     <%= f.select :subway_line, options_for_select([["Select subway line...", ""]] + @subway_lines), {}, {:class => "form-control"} %> <br /> <br />
+     <%= f.label 'Trolley line: ' %> <br />
+     <%= f.select :trolley_line, options_for_select([["Select trolley line...", ""]] + @trolley_lines), {}, {:class => "form-control"} %> <br /> <br />
      <%= f.label 'Номер на превозното средство:' %> <br />
      <%= f.text_field :bus_id, :required => true, class: "form-control", :maxlength=>"4" %> <br /> <br />
   	 <%= f.label 'Снимка към инцидента: ' %><br />

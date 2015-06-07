@@ -7,8 +7,32 @@ class AlertController < ApplicationController
 	end
 	
 	def create
-		bus_line = params[:alert][:bus_line].to_s
-		company = get_bus_company(bus_line)
+		transport = params[:alert][:transport]
+		if transport == "bus"
+			line = params[:alert][:bus_line].to_s
+			params[:alert][:trolley_line] = nil
+			params[:alert][:tram_line] = nil
+			params[:alert][:subway_line] = nil
+			company = get_bus_company(line)
+		elsif transport == "trolley"
+			line = params[:alert][:trolley_line].to_s
+			company = get_trolley_company(line)
+			params[:alert][:bus_line] = nil
+			params[:alert][:tram_line] = nil
+			params[:alert][:subway_line] = nil
+		elsif transport == "tram"
+			line = params[:alert][:tram_line].to_s
+			company = get_tram_company(line)
+			params[:alert][:trolley_line] = nil
+			params[:alert][:bus_line] = nil
+			params[:alert][:subway_line] = nil
+		else transport == "subway"
+			line = params[:alert][:subway_line].to_s
+			company = get_subway_company(line)
+			params[:alert][:trolley_line] = nil
+			params[:alert][:tram_line] = nil
+			params[:alert][:bus_line] = nil
+		end
 		params[:alert][:company_mail] = get_mail(company)
 		@alert = Alert.new(params[:alert])
 		@alert.request = request
@@ -23,7 +47,7 @@ class AlertController < ApplicationController
 		  	File.open(path, "wb") { |f| f.write(params[:alert][:image].read) }
 		  end
 		  comment = params[:alert][:comment].to_s
-		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :bus_id => bus_id, :comment => comment, :company_mail => params[:alert][:company_mail], :image => image
+		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :line => line, :bus_id => bus_id, :comment => comment, :company_mail => params[:alert][:company_mail], :image => image, :transport => transport
 		else
 		  flash.now[:error] = 'Cannot send message.'
 		  render :index

@@ -22,6 +22,33 @@ def get_bus_company(line)
 	end
 end
 
+def get_trolley_company(line)
+	hash = JSON.parse read_data
+	hash["public_transport"]["Service"][2]["Trolley"].each do |e|
+		if e["num"].to_s == line.to_s
+			return e["operator"].to_s
+		end
+	end
+end
+
+def get_tram_company(line)
+	hash = JSON.parse read_data
+	hash["public_transport"]["Service"][0]["Tram"].each do |e|
+		if e["num"].to_s == line.to_s
+			return e["operator"].to_s
+		end
+	end
+end
+
+def get_subway_company(line)
+	hash = JSON.parse read_data
+	hash["public_transport"]["Service"][1]["Subway"].each do |e|
+		if e["num"].to_s == line.to_s
+			return e["operator"].to_s
+		end
+	end
+end
+
 def get_tram_lines
 	get_lines 0, "Tram"
 end

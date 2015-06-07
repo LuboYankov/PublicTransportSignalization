@@ -5,9 +5,14 @@ class Alert < MailForm::Base
   attribute :company_mail, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :time
   attribute :bus_line
+  attribute :trolley_line
+  attribute :tram_line
+  attribute :subway_line
   attribute :bus_id
+  attribute :line
   attribute :image
   attribute :comment
+  attribute :transport
 	
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
