@@ -16,13 +16,14 @@ class AlertController < ApplicationController
 		  name = params[:alert][:first_name].to_s + " " + params[:alert][:last_name].to_s
 		  email = params[:alert][:email].to_s
 		  time = params[:alert][:time].to_s
+		  bus_id = params[:alert][:bus_id].to_s
 		  if params[:alert][:image]
 		  	image = params[:alert][:image].original_filename
 		  	path = File.join("app/assets/images", image)
 		  	File.open(path, "wb") { |f| f.write(params[:alert][:image].read) }
 		  end
 		  comment = params[:alert][:comment].to_s
-		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :comment => comment, :company_mail => params[:alert][:company_mail], :image => image
+		  redirect_to :controller => 'posthandler', :name => name, :email => email, :time => time, :bus_line => bus_line, :bus_id => bus_id, :comment => comment, :company_mail => params[:alert][:company_mail], :image => image
 		else
 		  flash.now[:error] = 'Cannot send message.'
 		  render :index

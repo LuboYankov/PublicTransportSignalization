@@ -5,6 +5,7 @@ class Alert < MailForm::Base
   attribute :company_mail, :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :time
   attribute :bus_line
+  attribute :bus_id
   attribute :image
   attribute :comment
 	

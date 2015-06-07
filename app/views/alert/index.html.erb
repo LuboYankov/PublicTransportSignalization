@@ -14,6 +14,8 @@
   	 <%= f.label 'Автобусна линия: ' %> <br />
   	 <% @bus_lines = get_bus_lines %>
   	 <%= f.select :bus_line, options_for_select([["Select bus line...", ""]] + @bus_lines), {}, {:class => "form-control", :required => true} %> <br /> <br />
+     <%= f.label 'Номер на превозното средство:' %> <br />
+     <%= f.text_field :bus_id, :required => true, class: "form-control", :maxlength=>"4" %> <br /> <br />
   	 <%= f.label 'Снимка към инцидента: ' %><br />
   	 <%= f.file_field :image, class: "btn btn-default btn-lg btn-block" %> <br /> <br />
   	 <%= f.label 'Коментар: ' %><br />
