@@ -1,3 +1,11 @@
 // Place all the styles related to the posthandler controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body#posthandler {
+	background-color: #000;
+}
+
+h2,h4 { color: #FFF }
+table thead tr th { color: #FFF; }
+table tbody tr td { color: #FFF; }

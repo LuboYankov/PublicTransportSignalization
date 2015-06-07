@@ -2,7 +2,6 @@
 <% require_relative '../../controllers/buslines/parse_lines.rb' %>
 
 <div class="container">
-<h1>Подай жалба</h1>
 <%= form_for :alert , :html => { :multipart => true } do |f| %>
 	 <%= f.label 'First Name: ' %><br />
   	 <%= f.text_field :first_name, :required => true, class: "form-control" %> <br /> <br />
