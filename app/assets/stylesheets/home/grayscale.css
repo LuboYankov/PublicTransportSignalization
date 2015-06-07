@@ -17,6 +17,10 @@ html {
     height: 100%;
 }
 
+#alert .col-lg-offset-2 {
+     margin-left: 0;
+}
+
 h1,
 h2,
 h3,
